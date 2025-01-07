@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-session = boto3.Session(profile_name="sandbox_profile")
+session = boto3.Session(profile_name="sandbox_profile") or boto3
 
 class WeatherDashboard:
     def __init__(self):
